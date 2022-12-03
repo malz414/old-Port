@@ -1,0 +1,227 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: black;
+  --light-bg: white;
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+ 
+
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  color:  var(--light-bg);
+  
+  background: var(--dark-bg);
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    color:  var(--light-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 0px;
+
+  }
+
+  section {
+    color:  var(--light-bg);
+   
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+ 
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+ 
+  }
+
+  blockquote p {
+  
+    color:  var(--light-bg);
+    background: var(--dark-bg);
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    color:  var(--light-bg);
+    background: var(--dark-bg);
+    grid-column: 6 / 12;
+  
+    transform:translateX(100%);
+    opacity:0;
+    filter:blur(5px);
+    transition: all 1s;
+
+  }
+  .about {
+
+    color:  var(--light-bg);
+    background: var(--dark-bg);
+  
+    opacity:0;
+    margin-top: var(--spacing);
+    transform:translateX(-100%);
+    filter:blur(5px);
+    transition: all 1s;
+
+  }
+  .light {
+    color:  var(--light-bg);
+    background: var(--dark-bg);
+  
+    transform:translateX(-100%);
+    opacity:0;
+    filter:blur(5px);
+    transition: all 1s;
+
+  }
+
+
+@media(prefers-reduced-motion){
+  
+  .left{
+    transition:none;
+  }
+  .about{
+    transition:none;
+  }
+  .light{
+    transition:none;
+  }
+}
+
+  .show{
+    opacity:1;
+  filter: blur(0);
+  transform: translateX(0);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: var(--dark-bg);
+    padding: 2px 16px;
+    color: var(--light-bg);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
