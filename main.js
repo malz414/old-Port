@@ -2,8 +2,7 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
-import { AudioLoader } from '/node_modules/.vite/deps/three.js?v=225e615d';
-
+import { AudioLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/audioloader.js';
 
 // Setup
 var balloon1, balloon2, balloon3, mouse, raycaster, selected = null;
