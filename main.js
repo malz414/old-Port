@@ -354,7 +354,7 @@ showL();
 }
 
 if (intersects.length > 0  ){
-  console.log(intersects[ 0 ].object.name );
+  console.log(intersects[ 0 ].object.userData.name);
 
   
   
