@@ -2,7 +2,7 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
-
+import { AuidoLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/AudioLoader.js';
 // Setup
 var balloon1, balloon2, balloon3, mouse, raycaster, selected = null;
 
@@ -304,7 +304,6 @@ if (intersects.length > 0 && intersects[ 0 ].object.userData.name == 'Sphere'  )
   
   for ( let i = 0; i < intersects.length; i ++ ) {
 
-    ballpop.play();
   action.stop();  
   action1.stop();
   action2.stop();  
