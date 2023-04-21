@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+ 
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
-	  <script type="module" src="main.js"></script>
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	 
+<link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Malique's Website</title>
   </head>
   <body>
@@ -49,9 +50,12 @@
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
- <img src="vr screen.png" style="width:100%">
-      <p>This is carniVRal my VR game. Trailer currently unavailable but here is the <a href="https://1drv.ms/u/s!AuSUgGR1SqhUiQEa0LJ1EDQ-uXym?e=fpV88a">executable</a>  to try.</p>
+    <video width="700 " height="320" controls>
+      <source src="carni.mp4" type="video/mp4" style="width:100%">
+    </video>
+    <p>Demo for carniVRal</p>
   </div>
+
 
   <div class="mySlides">
     <video width="700 " height="320" controls>
@@ -61,12 +65,23 @@
   </div>
 
   <div class="mySlides">
-  <video width="720" height="320" controls>
+  <video width="700" height="320" controls>
       <source src="mobile.mp4" type="video/mp4" style="width:100%">
     </video>
     <p>Small mobile maze game that uses light to make traversal difficult.</p>
   </div>
-
+ <div class="mySlides">
+  <video width="700" height="320" controls>
+      <source src="shapes.mp4" type="video/mp4" style="width:100%">
+    </video>
+    <p>Small system for adding and editing shapes</p>
+  </div>
+ <div class="mySlides">
+  <video width="700" height="320" controls>
+      <source src="shapes.mp4" type="video/mp4" style="width:100%">
+    </video>
+    <p>Demonstration of tank ai using state machine</p>
+  </div>
 
 
   <!-- Next and previous buttons -->
@@ -89,6 +104,13 @@
     <div class="column">
       <img class="demo cursor" src="game.png" style="width:100%" onclick="currentSlide(3)" alt="Mobile Game">
     </div>
+	    <div class="column">
+      <img class="demo cursor" src="shapes.png" style="width:100%" onclick="currentSlide(3)" alt="Shape Game">
+    </div>
+	    <div class="column">
+      <img class="demo cursor" src="tank.png" style="width:100%" onclick="currentSlide(3)" alt="Tank AI">
+    </div>
+	  
  
     </div>
   </div>
@@ -98,7 +120,6 @@
 
       <!-- <section class="light">
         <h2>🌮 Work History 🌮</h2>
-
         <h3>FL Hardware</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -111,12 +132,10 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-
         
       <blockquote>
         <p>Thanks for watching!</p>
       </blockquote>
-
     
       </section> -->
 
@@ -130,7 +149,7 @@
 
 </body>
   
-
+ <script type="module" src="./main.js"></script>
 <script>
   let slideIndex = 1;
   showSlides(slideIndex);
