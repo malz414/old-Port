@@ -302,8 +302,9 @@ if (intersects.length > 0 && intersects[ 0 ].object.userData.name == 'Sphere'  )
   console.log( intersects[ 0 ].object.userData.name );
   console.log(scene.children);
   
+    
   for ( let i = 0; i < intersects.length; i ++ ) {
-
+    console.log("balloon no pop");
   action.stop();  
   action1.stop();
   action2.stop();  
@@ -312,14 +313,15 @@ if (intersects.length > 0 && intersects[ 0 ].object.userData.name == 'Sphere'  )
   action1.play();
   action2.play();
   action3.play();
- 
+  console.log("baloon poppp");
   showLight()
 
   }
 }
+
 if (intersects.length > 0 && intersects[ 0 ].object.name == 'moon'  )
 {
-  console.log("HeLLO");
+  console.log("let there be light");
   moon.rotation.y += Math.PI / 2;
 
   sceneToWhite();
@@ -330,7 +332,7 @@ if (intersects.length > 0 && intersects[ 0 ].object.name == 'moon'  )
  
   if (intersects.length > 0 && intersects[ 0 ].object.name == 'sun'  )
   {
-    console.log("HeLLO");
+    console.log("kingdom hearts is darkness");
     moon.rotation.y += Math.PI / 2;
   
     sceneToblack();
@@ -339,7 +341,6 @@ if (intersects.length > 0 && intersects[ 0 ].object.name == 'moon'  )
     
     }
   
-    
     
   
   
