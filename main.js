@@ -210,7 +210,7 @@ const meTexture = [
 
 const me = new THREE.Mesh(bpx, meTexture);
 me.name = "me";
-//scene.add(me);
+scene.add(me);
 
 // Moon
 
