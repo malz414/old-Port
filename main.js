@@ -297,7 +297,7 @@ function onMouseMove( event ) {
 }
 function onClick(event){
 raycaster.setFromCamera(mouse, camera);
-const intersects = raycaster.intersectObjects( scene.children );
+const intersects = raycaster.intersectObjects( scene.children,true );
 if (intersects.length > 0 && intersects[ 0 ].object.userData.name == 'Sphere'  ) {
   console.log( intersects[ 0 ].object.userData.name );
   console.log(scene.children);
@@ -378,7 +378,7 @@ function moveMoon(){
 function hover(){
   
   raycaster.setFromCamera( mouse, camera );
-  const intersects = raycaster.intersectObjects( scene.children );
+  const intersects = raycaster.intersectObjects( scene.children,true );
 
 	for ( let i = 0; i < intersects.length; i ++ ) {
 
