@@ -187,7 +187,7 @@ const meTexture = [
   new THREE.MeshStandardMaterial( { map: Cloader.load("sky.jpg"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("sq1.png"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("sq1.png"), } ),
-  new THREE.MeshStandardMaterial( { map: Cloader.load("jeff.png"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("grad.jpg"), } ),
 ];
 
 
