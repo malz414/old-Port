@@ -168,7 +168,7 @@ loader.load( 'eeeaarth spin.glb', function ( gltf ) {
 loader.load( 'balloon2.glb', function ( gltf ) {
 
   const balloon3 = gltf.scene;
-  balloon3.position.set( -12, -55, -20  );
+  balloon3.position.set( -8, -55, -20  );
   balloon3.scale.set( 4.01, 4.01, 4.51 );
   scene.add( balloon3 );
   balloon3.rotation.y += -1.3;
