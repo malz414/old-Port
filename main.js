@@ -139,7 +139,7 @@ loader.load( 'stall.glb', function ( gltf ) {
 } );
 
 
-
+let earth;
 loader.load( 'eeeaarth spin.glb', function ( gltf ) {
 
   const earth = gltf.scene;
