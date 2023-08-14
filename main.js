@@ -144,19 +144,18 @@ loader.load( 'eeeaarth spin.glb', function ( gltf ) {
 
   const earth = gltf.scene;
   earth.position.set( 0, -90, -20  );
-  earth.scale.set( 5.01, 5.01, 5.51 );
+  earth.scale.set( 3.01, 3.01, 3.51 );
   scene.add( earth );
   earth.rotation.y += -1.3;
   mixer = new THREE.AnimationMixer(earth);
 
-  action3 = mixer.clipAction(gltf.animations[0]);
-  action3.setLoop( THREE.LoopOnce );
-  action4 = mixer.clipAction(gltf.animations[1]);
+  action4 = mixer.clipAction(gltf.animations[0]);
   action4.setLoop( THREE.LoopOnce );
-  action5 = mixer.clipAction(gltf.animations[2]);
+  action5 = mixer.clipAction(gltf.animations[1]);
   action5.setLoop( THREE.LoopOnce );
-  action6 = mixer.clipAction(gltf.animations[3]);
+  action6 = mixer.clipAction(gltf.animations[2]);
   action6.setLoop( THREE.LoopOnce );
+
 
 
 
@@ -344,6 +343,27 @@ if (intersects.length > 0 && intersects[ 0 ].object.userData.name == 'Sphere'  )
   action2.play();
   action3.play();
   console.log("baloon poppp");
+  showLight()
+
+  }
+}
+
+	if (intersects.length > 0 && intersects[ 0 ].object.userData.name == 'earth'  ) {
+  console.log( intersects[ 0 ].object.userData.name );
+  console.log(scene.children);
+  
+    
+  for ( let i = 0; i < intersects.length; i ++ ) {
+    console.log("balloon no pop");
+  action4.stop();  
+  action5.stop();
+  action6.stop();  
+
+  action4.play();
+  action5.play();
+  action6.play();
+
+  console.log("SPINNNN poppp");
   showLight()
 
   }
