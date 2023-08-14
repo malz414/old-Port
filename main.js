@@ -23,6 +23,10 @@ var action = null;
 var action1 = null;
 var action2 = null;
 var action3 = null;
+
+var action4 = null;
+var action5 = null;
+var action6 = null;
 const listener = new THREE.AudioListener();
 
 
@@ -122,7 +126,7 @@ loader.load( 'rocket.glb', function ( gltf ) {
 loader.load( 'stall.glb', function ( gltf ) {
 
   const model = gltf.scene;
-  model.position.set( -10, -65, -20 );
+  model.position.set( -10, -60, -20 );
   model.scale.set( 2.51, 3.01, 2.01 );
   scene.add( model );
   model.rotation.y += -5.3;
@@ -135,6 +139,32 @@ loader.load( 'stall.glb', function ( gltf ) {
 } );
 
 
+
+loader.load( 'eeeaarth spin.glb', function ( gltf ) {
+
+  const earth = gltf.scene;
+  earth.position.set( 0, -90, -20  );
+  earth.scale.set( 5.01, 5.01, 5.51 );
+  scene.add( earth );
+  earth.rotation.y += -1.3;
+  mixer = new THREE.AnimationMixer(earth);
+
+  action3 = mixer.clipAction(gltf.animations[0]);
+  action3.setLoop( THREE.LoopOnce );
+  action4 = mixer.clipAction(gltf.animations[1]);
+  action4.setLoop( THREE.LoopOnce );
+  action5 = mixer.clipAction(gltf.animations[2]);
+  action5.setLoop( THREE.LoopOnce );
+  action6 = mixer.clipAction(gltf.animations[3]);
+  action6.setLoop( THREE.LoopOnce );
+
+
+
+}, undefined, function ( e ) {
+
+  console.error( e );
+
+} );
 
 loader.load( 'balloon2.glb', function ( gltf ) {
 
