@@ -126,7 +126,7 @@ loader.load( 'rocket.glb', function ( gltf ) {
 loader.load( 'stall.glb', function ( gltf ) {
 
   const model = gltf.scene;
-  model.position.set( -10, -65, -20 );
+  model.position.set( -12, -65, -20 );
   model.scale.set( 2.51, 3.01, 2.01 );
   scene.add( model );
   model.rotation.y += -5.3;
@@ -144,7 +144,7 @@ loader.load( 'stall.glb', function ( gltf ) {
 loader.load( 'balloon2.glb', function ( gltf ) {
 
   const balloon3 = gltf.scene;
-  balloon3.position.set( -10, -55, -20  );
+  balloon3.position.set( -12, -55, -20  );
   balloon3.scale.set( 4.01, 4.01, 4.51 );
   scene.add( balloon3 );
   balloon3.rotation.y += -1.3;
