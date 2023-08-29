@@ -188,10 +188,10 @@ const bpx = new THREE.BoxGeometry(5, 5, 5);
 
 const meTexture = [
   new THREE.MeshStandardMaterial( { map: Cloader.load("black.jpg"), } ),
-  new THREE.MeshStandardMaterial( { map: Cloader.load("black.jpg"), } ),
-  new THREE.MeshStandardMaterial( { map: Cloader.load("sky.jpg"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("www.png"), } ),
-  new THREE.MeshStandardMaterial( { map: Cloader.load("meet.png"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("sky.jpg"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("black.png"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("meet.jpg"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("grad.jpg"), } ),
 ];
 
