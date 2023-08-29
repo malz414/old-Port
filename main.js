@@ -187,11 +187,11 @@ const Cloader = new THREE.TextureLoader();
 const bpx = new THREE.BoxGeometry(5, 5, 5);
 
 const meTexture = [
-  new THREE.MeshStandardMaterial( { map: Cloader.load("m.jpg"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("black.jpg"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("black.jpg"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("sky.jpg"), } ),
-  new THREE.MeshStandardMaterial( { map: Cloader.load("sq1.png"), } ),
-  new THREE.MeshStandardMaterial( { map: Cloader.load("sq1.png"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("www.png"), } ),
+  new THREE.MeshStandardMaterial( { map: Cloader.load("meet.png"), } ),
   new THREE.MeshStandardMaterial( { map: Cloader.load("grad.jpg"), } ),
 ];
 
